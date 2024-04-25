@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation    First program
 Library    SeleniumLibrary
-Resource    ../Resources/keywords.robot
+Resource    businesskeywords.robot
 
 *** Test Cases ***
 Validate opening of browser
