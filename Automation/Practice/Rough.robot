@@ -4,5 +4,4 @@ Library    SeleniumLibrary
 
 *** Test Cases ***
 Validate opening of browser
-    Open browser   edge
-    
+    Open browser   chrome
