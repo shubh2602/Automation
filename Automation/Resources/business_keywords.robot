@@ -1,10 +1,11 @@
 ***Settings***
 Library    SeleniumLibrary
+Resource   business_variables.robot
 
 *** Keywords ***
 Open youtube
     [Arguments]    ${browser}
-    Open Browser    https://www.youtube.com/    ${browser}
+    Open Browser    ${url}    ${browser}
     Maximize Browser Window
 
 play Ankhiyaan gulab
