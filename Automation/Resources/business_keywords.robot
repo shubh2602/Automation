@@ -1,6 +1,6 @@
 ***Settings***
-Library    SeleniumLibrary
-Resource   business_variables.robot
+Library        SeleniumLibrary
+Resource       business_variables.robot
 
 *** Keywords ***
 Open youtube
