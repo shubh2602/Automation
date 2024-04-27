@@ -4,5 +4,5 @@ Library    SeleniumLibrary
 
 *** Test Cases ***
 Validate opening of browser
-    op
+    Open browser   edge
     
