@@ -3,7 +3,7 @@ Library    SeleniumLibrary
 
 *** Keywords ***
 Open youtube
-    Open Browser    https://www.youtube.com/    chrome       options=add_experimental_option("detach", True)
+    Open Browser    https://www.youtube.com/    chrome
     Maximize Browser Window
 
 play Ankhiyaan gulab
