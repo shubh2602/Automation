@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-27T18:59:49.247766" rpa="false" schemaversion="5">
+<suite id="s1" name="Demo1" source="c:\Users\Shubham Pandey\PycharmProjects\Automation\Practice\Demo1.robot">
+<test id="s1-t1" name="Validate opening of browser" line="8">
+<kw name="Open youtube" owner="business_keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-27T18:59:49.503012" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com/'.</msg>
+<arg>https://www.youtube.com/</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-27T18:59:49.503012" elapsed="7.927150"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-27T18:59:57.430162" elapsed="0.257602"/>
+</kw>
+<arg>chrome</arg>
+<status status="PASS" start="2024-04-27T18:59:49.502015" elapsed="8.185749"/>
+</kw>
+<kw name="play Ankhiyaan gulab" owner="business_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-27T18:59:57.689807" level="INFO">Typing text 'Ankhiyaan Gulab' into text field '//input[@id='search']'.</msg>
+<arg>//input[@id='search']</arg>
+<arg>Ankhiyaan Gulab</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-27T18:59:57.688800" elapsed="0.296980"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-27T18:59:57.986782" level="INFO">Clicking button '//button[@id='search-icon-legacy']'.</msg>
+<arg>//button[@id='search-icon-legacy']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-27T18:59:57.985780" elapsed="0.117987"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//*[@id="video-title"]/yt-formatted-string</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-27T18:59:58.104271" elapsed="1.475964"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-27T18:59:59.581233" level="INFO">Clicking element '//*[@id="video-title"]/yt-formatted-string'.</msg>
+<arg>//*[@id="video-title"]/yt-formatted-string</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-27T18:59:59.580235" elapsed="0.504478"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-27T19:00:02.085897" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-27T19:00:00.084713" elapsed="2.002520"/>
+</kw>
+<status status="PASS" start="2024-04-27T18:59:57.688800" elapsed="4.398433"/>
+</kw>
+<status status="PASS" start="2024-04-27T18:59:49.501028" elapsed="12.588083"/>
+</test>
+<doc>First program</doc>
+<status status="PASS" start="2024-04-27T18:59:49.254765" elapsed="12.836340"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo1">Demo1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

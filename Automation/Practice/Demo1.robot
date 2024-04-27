@@ -1,10 +1,11 @@
 *** Settings ***
 Documentation    First program
 Library    SeleniumLibrary
-Resource    businesskeywords.robot
+Resource       .../Resources/business_keywords.robot
+Resource    
 
 *** Test Cases ***
 Validate opening of browser
-    Open youtube
+    Open youtube    chrome
     play Ankhiyaan gulab
     

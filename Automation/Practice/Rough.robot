@@ -5,4 +5,4 @@ Library         SeleniumLibrary
 *** Test Cases ***
 Validate opening of browser
     Open browser   chrome
-    click button
+    Click Button    id:username
