@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation    Flipkart full flow
 Library    SeleniumLibrary
-Resource    business_keywords.robot
-Resource    business_variables.robot
+Resource    C:\Users\Shubham Pandey\PycharmProjects\Automation\Resources\business_keywords.robot
+Test Setup    Open Flikart in chrome
 
 ***Test Cases***

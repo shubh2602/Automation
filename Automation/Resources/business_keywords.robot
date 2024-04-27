@@ -14,3 +14,7 @@ play Ankhiyaan gulab
     Wait Until Element Is Visible    //*[@id="video-title"]/yt-formatted-string
     Click Element    //*[@id="video-title"]/yt-formatted-string
     Sleep    2
+
+Open Flikart in chrome
+    Open Browser    ${flipkart_url}    chrome
+    
