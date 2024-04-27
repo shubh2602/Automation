@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-28T01:52:19.984763" rpa="false" schemaversion="5">
+<suite id="s1" name="Flipkart" source="C:\Users\Shubham Pandey\PycharmProjects\Automation\Practice\Flipkart.robot">
+<test id="s1-t1" name="Order a product from flipkart" line="9">
+<kw name="Open Flikart in chrome">
+<msg time="2024-04-28T01:52:20.209752" level="FAIL">No keyword with name 'Open Flikart in chrome' found.</msg>
+<status status="FAIL" start="2024-04-28T01:52:20.209752" elapsed="0.000000">No keyword with name 'Open Flikart in chrome' found.</status>
+</kw>
+<kw name="Login to flipkart">
+<status status="NOT RUN" start="2024-04-28T01:52:20.211748" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-28T01:52:20.207685" elapsed="0.004063">No keyword with name 'Open Flikart in chrome' found.</status>
+</test>
+<doc>Flipkart full flow</doc>
+<status status="FAIL" start="2024-04-28T01:52:19.987711" elapsed="0.224037"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Flipkart">Flipkart</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-04-28T01:52:20.206752" level="ERROR">Error in file 'C:\Users\Shubham Pandey\PycharmProjects\Automation\Practice\Flipkart.robot' on line 4: Resource file 'C:UsersShubham PandeyPycharmProjectsAutomationResourcesbusiness_keywords.robot' does not exist.</msg>
+</errors>
+</robot>

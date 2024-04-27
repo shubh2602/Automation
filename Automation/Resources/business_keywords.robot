@@ -1,6 +1,9 @@
 ***Settings***
-Library        SeleniumLibrary
-Resource       business_variables.robot
+Library    SeleniumLibrary
+
+*** Variables ***
+${url}                 https://www.youtube.com/
+${flipkart_url}        https://www.flipkart.com/
 
 *** Keywords ***
 Open youtube
@@ -18,3 +21,6 @@ play Ankhiyaan gulab
 Open Flikart in chrome
     Open Browser    ${flipkart_url}    chrome
     
+Login to flipkart
+    Click Element    (//*[@title="Login"])[1]
+    Input Text    //*[@class="r4vIwl BV+Dqf"]    shubham
