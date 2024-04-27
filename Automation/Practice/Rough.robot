@@ -12,6 +12,10 @@ Library    SeleniumLibrary
 
 *** Test Cases ***
 Validate opening of browser
+<<<<<<< HEAD
     Open browser   edge
     
+>>>>>>> develop
+=======
+    Open browser   chrome
 >>>>>>> develop
