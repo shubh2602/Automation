@@ -1,18 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-28T01:52:19.984763" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-28T20:44:14.324340" rpa="false" schemaversion="5">
 <suite id="s1" name="Flipkart" source="C:\Users\Shubham Pandey\PycharmProjects\Automation\Practice\Flipkart.robot">
 <test id="s1-t1" name="Order a product from flipkart" line="9">
-<kw name="Open Flikart in chrome">
-<msg time="2024-04-28T01:52:20.209752" level="FAIL">No keyword with name 'Open Flikart in chrome' found.</msg>
-<status status="FAIL" start="2024-04-28T01:52:20.209752" elapsed="0.000000">No keyword with name 'Open Flikart in chrome' found.</status>
+<kw name="Open Flikart in chrome" owner="business_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-28T20:44:14.596288" level="INFO">Opening browser 'chrome' to base url 'https://www.flipkart.com/'.</msg>
+<arg>${flipkart_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-28T20:44:14.596288" elapsed="4.020045"/>
 </kw>
-<kw name="Login to flipkart">
-<status status="NOT RUN" start="2024-04-28T01:52:20.211748" elapsed="0.000000"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-28T20:44:18.617333" elapsed="0.042864"/>
 </kw>
-<status status="FAIL" start="2024-04-28T01:52:20.207685" elapsed="0.004063">No keyword with name 'Open Flikart in chrome' found.</status>
+<status status="PASS" start="2024-04-28T20:44:14.595058" elapsed="4.065139"/>
+</kw>
+<kw name="Login to flipkart" owner="business_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-28T20:44:18.661300" level="INFO">Clicking element '(//*[@title="Login"])[1]'.</msg>
+<arg>(//*[@title="Login"])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T20:44:18.661300" elapsed="1.299548"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-28T20:44:19.961839" level="INFO">Typing text '9462647284' into text field '//*[@class="r4vIwl BV+Dqf"]'.</msg>
+<arg>//*[@class="r4vIwl BV+Dqf"]</arg>
+<arg>9462647284</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T20:44:19.960848" elapsed="0.926165"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-28T20:44:20.888011" level="INFO">Clicking button '//*[contains(text(),'Request OTP')]'.</msg>
+<arg>//*[contains(text(),'Request OTP')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T20:44:20.887013" elapsed="0.141081"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-04-28T20:44:26.186381" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-28T20:44:26.186381" level="FAIL">Element '//*[contains(text(),'Shubham')]/ancestor::a' not visible after 5 seconds.</msg>
+<arg>//*[contains(text(),'Shubham')]/ancestor::a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-04-28T20:44:21.028094" elapsed="5.158287">Element '//*[contains(text(),'Shubham')]/ancestor::a' not visible after 5 seconds.</status>
+</kw>
+<status status="FAIL" start="2024-04-28T20:44:18.660197" elapsed="7.530836">Element '//*[contains(text(),'Shubham')]/ancestor::a' not visible after 5 seconds.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-04-28T20:44:26.191568" elapsed="2.293962"/>
+</kw>
+<status status="FAIL" start="2024-04-28T20:44:14.594036" elapsed="13.893068">Element '//*[contains(text(),'Shubham')]/ancestor::a' not visible after 5 seconds.</status>
 </test>
 <doc>Flipkart full flow</doc>
-<status status="FAIL" start="2024-04-28T01:52:19.987711" elapsed="0.224037"/>
+<status status="FAIL" start="2024-04-28T20:44:14.327888" elapsed="14.161625"/>
 </suite>
 <statistics>
 <total>
@@ -25,6 +65,5 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2024-04-28T01:52:20.206752" level="ERROR">Error in file 'C:\Users\Shubham Pandey\PycharmProjects\Automation\Practice\Flipkart.robot' on line 4: Resource file 'C:UsersShubham PandeyPycharmProjectsAutomationResourcesbusiness_keywords.robot' does not exist.</msg>
 </errors>
 </robot>
