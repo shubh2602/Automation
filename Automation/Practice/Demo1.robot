@@ -1,8 +1,7 @@
 *** Settings ***
 Documentation    First program
 Library    SeleniumLibrary
-Resource       .../Resources/business_keywords.robot
-Resource    
+Resource    C:\Users\Shubham Pandey\PycharmProjects\Automation\Resources\business_keywords.robot
 
 *** Test Cases ***
 Validate opening of browser
