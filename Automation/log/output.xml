@@ -1,58 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-28T20:44:14.324340" rpa="false" schemaversion="5">
-<suite id="s1" name="Flipkart" source="C:\Users\Shubham Pandey\PycharmProjects\Automation\Practice\Flipkart.robot">
-<test id="s1-t1" name="Order a product from flipkart" line="9">
-<kw name="Open Flikart in chrome" owner="business_keywords" type="SETUP">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-07-16T13:02:15.672235" rpa="false" schemaversion="5">
+<suite id="s1" name="Demo1" source="C:\Users\Shubham Pandey\PycharmProjects\Automation\Practice\Demo1.robot">
+<test id="s1-t1" name="Validate opening of browser" line="7">
+<kw name="Open youtube">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-04-28T20:44:14.596288" level="INFO">Opening browser 'chrome' to base url 'https://www.flipkart.com/'.</msg>
-<arg>${flipkart_url}</arg>
+<msg time="2024-07-16T13:02:15.978823" level="FAIL">Variable '${url}' not found.</msg>
+<arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-04-28T20:44:14.596288" elapsed="4.020045"/>
+<status status="FAIL" start="2024-07-16T13:02:15.977819" elapsed="0.001004">Variable '${url}' not found.</status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-04-28T20:44:18.617333" elapsed="0.042864"/>
+<status status="NOT RUN" start="2024-07-16T13:02:15.978823" elapsed="0.001591"/>
 </kw>
-<status status="PASS" start="2024-04-28T20:44:14.595058" elapsed="4.065139"/>
+<arg>chrome</arg>
+<status status="FAIL" start="2024-07-16T13:02:15.976818" elapsed="0.003596">Variable '${url}' not found.</status>
 </kw>
-<kw name="Login to flipkart" owner="business_keywords">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-28T20:44:18.661300" level="INFO">Clicking element '(//*[@title="Login"])[1]'.</msg>
-<arg>(//*[@title="Login"])[1]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-28T20:44:18.661300" elapsed="1.299548"/>
+<kw name="play Ankhiyaan gulab">
+<status status="NOT RUN" start="2024-07-16T13:02:15.980414" elapsed="0.000000"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-28T20:44:19.961839" level="INFO">Typing text '9462647284' into text field '//*[@class="r4vIwl BV+Dqf"]'.</msg>
-<arg>//*[@class="r4vIwl BV+Dqf"]</arg>
-<arg>9462647284</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-28T20:44:19.960848" elapsed="0.926165"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-04-28T20:44:20.888011" level="INFO">Clicking button '//*[contains(text(),'Request OTP')]'.</msg>
-<arg>//*[contains(text(),'Request OTP')]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-28T20:44:20.887013" elapsed="0.141081"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2024-04-28T20:44:26.186381" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-04-28T20:44:26.186381" level="FAIL">Element '//*[contains(text(),'Shubham')]/ancestor::a' not visible after 5 seconds.</msg>
-<arg>//*[contains(text(),'Shubham')]/ancestor::a</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2024-04-28T20:44:21.028094" elapsed="5.158287">Element '//*[contains(text(),'Shubham')]/ancestor::a' not visible after 5 seconds.</status>
-</kw>
-<status status="FAIL" start="2024-04-28T20:44:18.660197" elapsed="7.530836">Element '//*[contains(text(),'Shubham')]/ancestor::a' not visible after 5 seconds.</status>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-04-28T20:44:26.191568" elapsed="2.293962"/>
-</kw>
-<status status="FAIL" start="2024-04-28T20:44:14.594036" elapsed="13.893068">Element '//*[contains(text(),'Shubham')]/ancestor::a' not visible after 5 seconds.</status>
+<status status="FAIL" start="2024-07-16T13:02:15.975903" elapsed="0.004511">Variable '${url}' not found.</status>
 </test>
-<doc>Flipkart full flow</doc>
-<status status="FAIL" start="2024-04-28T20:44:14.327888" elapsed="14.161625"/>
+<doc>First program</doc>
+<status status="FAIL" start="2024-07-16T13:02:15.677623" elapsed="0.303725"/>
 </suite>
 <statistics>
 <total>
@@ -61,9 +32,10 @@
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Flipkart">Flipkart</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Demo1">Demo1</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2024-07-16T13:02:15.973825" level="ERROR">Error in file 'C:\Users\Shubham Pandey\PycharmProjects\Automation\Practice\Demo1.robot' on line 4: Resource file 'C:UsersShubham PandeyPycharmProjectsAutomationResourcesbusiness_keywords.robot' does not exist.</msg>
 </errors>
 </robot>
